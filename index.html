@@ -7,53 +7,39 @@
     <script defer src="script.js"></script>
     <link rel="icon" href="logo.png">
 </head>
-
 <body>
-    <header id="navbar">
-        <h1>🌊 Clean Oceans, Clean Future</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="causes.html">Causes</a>
-            <a href="solutions.html">Solutions</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="feedback.html">Feedback</a>
-        </nav>
+<header id="navbar">
+    <img src="logo.png" alt="Site Logo" class="logo">
+    <h1>Clean Oceans, Clean Future</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="causes.html">Causes</a>
+        <a href="solutions.html">Solutions</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
+    <button id="themeToggle">🌙</button>
+</header>
 
-        <button id="themeToggle">🌙</button>
-    </header>
+<section class="hero">
+    <h2>Welcome to Clean Oceans, Clean Future</h2>
+    <p>The ocean produces over half the oxygen we breathe and supports millions of marine species. Sadly, pollution and human actions are damaging it. Learn more about how we can protect our oceans.</p>
+    <button class="learn-more" onclick="toggleMore('moreHome')">Learn More</button>
+    <p id="moreHome" class="hidden">Oceans regulate global climate, provide food for billions, and are home to incredible biodiversity. This website supports SDG 14: Life Below Water, encouraging awareness and action.</p>
+</section>
 
-    <section class="hero">
-        <h2>Welcome to Clean Oceans, Clean Future</h2>
-            <p>
-            The ocean is one of the most important parts of Earth. It supplies more than
-            50% of the oxygen we breathe, supports millions of marine species, regulates our
-            planet’s temperature, and provides food for billions of people. Unfortunately,
-            human activities such as plastic pollution, overfishing, and chemical waste
-            have put our oceans at great risk.
-            </p>
-    </section>
+<section class="content">
+    <div class="image-block">
+        <img src="images/home1.jpg" alt="Ocean Image Placeholder">
+        <p>This image section can fit any wide ocean-themed picture. Add clear descriptions so the layout remains tidy and balanced.</p>
+    </div>
 
-    <section class="content">
-        <div class="image-block">
-            <img src="images/home1.jpg" alt="">
-            <p>
-            This website supports <b>United Nations Sustainable Development Goal 14
-            (Life Below Water)</b>, which aims to conserve and sustainably use the oceans,
-            seas, and marine resources. Through this website, you’ll learn about the causes 
-            of ocean pollution, their impacts on marine life, and what we can do as global 
-            citizens to protect the ocean for future generations.
-            </p>
-        </div>
+    <div class="image-block">
+        <img src="images/home2.jpg" alt="Marine Life Image Placeholder">
+        <p>Use this area to highlight the importance of marine conservation and how individuals can help.</p>
+    </div>
+</section>
 
-        <div class="image-block">
-            <img src="images/home2.jpg" alt="">
-            <p>
-            Together, we can take action to build a cleaner and healthier ocean — and a 
-            cleaner future for everyone.
-            </p>
-        </div>
-    </section>
-
-    <button id="backTop">▲</button>
+<button id="backTop">▲</button>
 </body>
 </html>
