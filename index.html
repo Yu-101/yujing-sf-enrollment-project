@@ -1,44 +1,49 @@
 <!DOCTYPE html>
-<html>
-  
+<html lang="en">
 <head>
-  <title>Clean Oceans – Home</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
-  
+
 <body>
+    <header id="navbar">
+        <h1>My Project</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="causes.html">Causes</a>
+            <a href="solutions.html">Solutions</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
 
+        <button id="themeToggle">🌙</button>
+    </header>
 
-<!-- NAVBAR -->
-<nav>
-  <img src="logo.png" alt="Logo">
-  <div>
-    <a href="index.html">Home</a>
-    <a href="causes.html">Causes</a>
-    <a href="solutions.html">Solutions</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="feedback.html">Feedback</a>
-  </div>
-</nav>
+    <section class="hero">
+        <h2>Welcome to My Awareness Project</h2>
+        <p>This website provides clear information on the causes and solutions to the issue we are studying.  
+           We aim to educate visitors with visuals, explanations, and examples.  
+           Explore each section to learn more!</p>
+    </section>
 
+    <section class="content">
+        <div class="image-block">
+            <img src="images/home1.jpg" alt="">
+            <p>This image represents the general theme of our project and sets the tone for the topic.  
+               It helps visitors quickly understand the purpose of the website.  
+               Visuals like this make information more engaging and impactful.</p>
+        </div>
 
-<button id="topBtn" onclick="topFunction()">Top</button>
+        <div class="image-block">
+            <img src="images/home2.jpg" alt="">
+            <p>Here we highlight a key real-world situation related to our subject.  
+               Showing examples allows viewers to connect concepts with reality.  
+               It encourages deeper thinking about the problems presented.</p>
+        </div>
+    </section>
 
-
-<div class="container fade">
-<h1>Clean Oceans, Clean Future</h1>
-<p>
-The ocean is essential to life on Earth. It produces oxygen, regulates
-climate, and supports millions of marine species. This website supports the
-United Nations Sustainable Development Goal 14: <b>Life Below Water</b>.
-</p>
-<p>
-Explore our pages to understand ocean pollution, its causes, and the
-solutions we can take together.
-</p>
-</div>
-
-
-<script src="script.js"></script>
+    <button id="backTop">▲</button>
 </body>
 </html>
