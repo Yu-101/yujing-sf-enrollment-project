@@ -1,71 +1,93 @@
-/* THEME VARIABLES */
-:root {
---bg: #f0faff;
---text: #003049;
---nav: #0077b6;
---nav-text: white;
-}
-
-
-/* DARK MODE */
-.dark-mode {
---bg: #001219;
---text: #e0fbfc;
---nav: #003049;
---nav-text: #e0fbfc;
-}
-
-
 body {
-margin: 0;
-font-family: Arial, sans-serif;
-background: var(--bg);
-color: var(--text);
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    transition: 0.3s;
 }
 
-
-html { scroll-behavior: smooth; }
-
-
-/* NAVBAR */
-nav {
-position: sticky;
-top: 0;
-background: var(--nav);
-padding: 15px;
-display: flex;
-align-items: center;
-justify-content: space-between;
-z-index: 1000;
-box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-color: var(--nav-text);
+:root {
+    --bg: #ffffff;
+    --text: #222;
+    --nav: #e0e0e0;
 }
-nav img {
-height: 45px;
+
+.dark-mode {
+    --bg: #1a1a1a;
+    --text: #f0f0f0;
+    --nav: #333;
 }
+
+/* Navbar */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--nav);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    transition: top 0.3s;
+    z-index: 1000;
+}
+
 nav a {
-margin: 0 15px;
-color: var(--nav-text);
-text-decoration: none;
-font-weight: bold;
+    margin: 0 12px;
+    text-decoration: none;
+    color: var(--text);
 }
-nav a:hover { text-decoration: underline; }
 
-
-/* THEME SWITCH BUTTON */
 #themeToggle {
-padding: 6px 12px;
-background: #90e0ef;
-border: none;
-border-radius: 10px;
-cursor: pointer;
-font-weight: bold;
+    padding: 5px 10px;
+    cursor: pointer;
 }
 
+/* Sections */
+.hero {
+    padding: 120px 20px 40px;
+    text-align: center;
+}
 
-.container { padding: 50px; max-width: 900px; margin: auto; }
-.fade { animation: fadeIn 0.8s ease forwards; opacity: 0; }
-@keyframes fadeIn { to { opacity: 1; } }
-#topBtn {
-position: fixed; bottom: 20px; right: 20px;
+.content {
+    padding: 120px 20px 40px;
+}
+
+.image-block {
+    margin-bottom: 40px;
+}
+.image-block img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Gallery Slider */
+.slider {
+    margin-top: 120px;
+    overflow: hidden;
+}
+.slides {
+    display: flex;
+    animation: slide 20s infinite;
+}
+.slides img {
+    width: 100%;
+}
+@keyframes slide {
+    0% {transform: translateX(0);}
+    14% {transform: translateX(-100%);}
+    28% {transform: translateX(-200%);}
+    42% {transform: translateX(-300%);}
+    56% {transform: translateX(-400%);}
+    70% {transform: translateX(-500%);}
+    84% {transform: translateX(-600%);}
+    100% {transform: translateX(0);}
+}
+
+/* Back to top */
+#backTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    display: none;
 }
