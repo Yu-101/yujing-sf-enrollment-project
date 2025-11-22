@@ -1,71 +1,65 @@
+/* GLOBAL STYLES */
+html { scroll-behavior: smooth; }
 body {
-  font-family: Arial, sans-serif;
-  background-color: #e0f7fa;
-  margin: 0;
-  padding: 0;
+margin: 0;
+font-family: Arial, sans-serif;
+background: #f0faff;
+color: #003049;
 }
 
-header {
-  background-color: #0277bd;
-  color: white;
-  padding: 15px;
-  text-align: center;
-}
 
-nav ul {
-  list-style: none;
-  padding: 0;
+/* NAVBAR */
+nav {
+position: sticky;
+top: 0;
+background: #0077b6;
+padding: 15px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+z-index: 1000;
+box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
-
-nav ul li {
-  display: inline;
-  margin: 0 15px;
+nav img {
+height: 45px;
 }
-
 nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+margin: 0 15px;
+color: white;
+text-decoration: none;
+font-weight: bold;
+}
+nav a:hover {
+text-decoration: underline;
 }
 
-section {
-  padding: 30px;
-  text-align: center;
+
+/* CONTENT WRAPPER */
+.container {
+padding: 50px;
+max-width: 900px;
+margin: auto;
 }
 
-.main-img {
-  width: 60%;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+
+/* SIMPLE FADE ANIMATION */
+.fade {
+animation: fadeIn 0.8s ease forwards;
+opacity: 0;
+}
+@keyframes fadeIn {
+to { opacity: 1; }
 }
 
-form input, form textarea {
-  width: 60%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
 
-button {
-  background-color: #0288d1;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
+/* GALLERY */
+.slider {
+width: 100%;
+overflow: hidden;
+border-radius: 10px;
 }
-
-button:hover {
-  background-color: #01579b;
+.slide-img {
+width: 100%;
+display: none;
 }
-
-footer {
-  background-color: #0277bd;
-  color: white;
-  text-align: center;
-  padding: 10px;
-}
-
-html {
-  scroll-behavior: smooth;
 }
